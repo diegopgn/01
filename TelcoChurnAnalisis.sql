@@ -139,3 +139,4 @@ group by state, Churn
 
 -- MAGIC %python
 -- MAGIC telco1_pd['gender'].value_counts()
+-- MAGIC #pruebafinalizada 
