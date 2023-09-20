@@ -228,6 +228,11 @@ results.show(5)
 
 # COMMAND ----------
 
+results.toPandas()
+results
+
+# COMMAND ----------
+
 from pyspark.ml.evaluation import BinaryClassificationEvaluator
 me_eval = BinaryClassificationEvaluator(rawPredictionCol= 'prediction', labelCol = 'candidatoIndex')
 results.select('candidatoIndex', 'prediction').show(10)
